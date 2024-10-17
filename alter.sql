@@ -1,0 +1,13 @@
+-- Active: 1729082435147@@127.0.0.1@5432@ph
+SELECT * FROM person2
+--  add COLUMN
+-- ALTER Table person ADD COLUMN email VARCHAR(25) DEFAULT 'email@gmail.com' NOT NULL;
+-- INSERT INTO person values(2, 'test', 22);
+-- INSERT INTO person values(3, 'Gandib Roy', 22, 'gandib@gmail.com');
+-- ALTER Table person RENAME COLUMN age to user_age;
+-- ALTER Table person alter COLUMN user_name type VARCHAR(50);
+-- ALTER Table person alter COLUMN user_age set NOT NULL;
+-- ALTER Table person alter COLUMN user_age DROP NOT NULL;
+-- ALTER TABLE person ADD CONSTRAINT unique_person_user_age UNIQUE(user_age);
+-- ALTER TABLE person DROP CONSTRAINT unique_person_user_age;
+-- TRUNCATE TABLE person2

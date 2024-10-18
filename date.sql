@@ -1,0 +1,15 @@
+SHOW timezone;
+SELECT now();
+create Table timeZ (ts TIMESTAMP without time zone, tsz TIMESTAMP with time zone);
+INSERT INTO timeZ VALUES('2024-10-18 20:51:00', '2024-10-18 20:51:00');
+SELECT * from timeZ;
+SELECT CURRENT_DATE;
+SELECT now()::date;
+SELECT now()::time;
+SELECT to_char(now(), 'dd Monthyyyy');
+SELECT to_char(now(), 'dd/mm/yyyy');
+SELECT CURRENT_DATE - INTERVAL '1 year';
+SELECT CURRENT_DATE + INTERVAL '1 year';
+SELECT age(CURRENT_DATE ,'1996-07-01');
+SELECT *, age(CURRENT_DATE, dob) FROM students;
+SELECT extract(year from '1996-07-01'::date);

@@ -32,3 +32,7 @@ SELECT * from departments;
 SELECT * from employees JOIN departments USING(dept_id);
 SELECT dept_name, round(avg(emp_salary)) as avg_salary from employees JOIN departments USING(dept_id) GROUP BY dept_name;
 SELECT dept_name, count(*) from employees JOIN departments USING(dept_id) GROUP BY dept_name;
+SELECT dept_name, round(avg(emp_salary)) as avg_salary from employees JOIN departments USING(dept_id) GROUP BY dept_name ORDER BY avg_salary desc LIMIT 1;
+INSERT INTO employees VALUES
+(13,'J Doe', 1000, 102),
+(14,'J Smith', 1400, 102);

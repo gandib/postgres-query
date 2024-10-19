@@ -42,4 +42,7 @@ INSERT INTO post (title, user_id) VALUES
 ('Enjoying with Akash!', 4);
 SELECT title from post WHERE user_id = 1;
 DELETE FROM "user" WHERE id = 4;
+DROP Table post;
 DROP Table "user";
+INSERT INTO post (title, user_id) VALUES
+('Enjoying a sunny day!', NULL);

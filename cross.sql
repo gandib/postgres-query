@@ -8,8 +8,7 @@ dept_id INT,
 dept_name VARCHAR(50)
 );
 INSERT INTO employees VALUES
-(1, 'John Doe', 101),
-(2, 'Jane Smith', 102);
+(15, 'Gandib', 102);
 INSERT INTO departments VALUES
 (101, 'Human Resource'),
 (102, 'Marketing');
